@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="menu-container-home">
+        <div id="container-itens">
+            <h2 class="titulo">Bem vindo {{ user.username }}</h2>
+            <button id="suas-musicas" class="item-home">Suas músicas</button>
+            <button id="recomendacoes" class="item-home">Recomendações</button>
+            <a href="{% url 'musicas' %}"><button id="lista-de-musicas" class="item-home" href="{% url 'cadastrar' %}">Lista de músicas</button></a>
+            <a href="{% url 'logout' %}"><button class="item-home">Sair</button></a>
+        </div>
+    </div>
+{% endblock %}

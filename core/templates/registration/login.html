@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST" id="menu-container">
+    {% csrf_token %}
+    <div id="container-itens">
+        <p id="login" class="item">Login</p>
+
+        <div class="item-user"> {{ form.username }} </div>
+        <div class="item-user-password"> {{ form.password }} </div>
+
+
+        <button type="submit" class="botao-entrar">Entrar</button>
+        <a href="{% url 'home' %}" class="item"><button class="botao-cadastrar">Cadastrar</button></a>
+    </div>
+</form>
+{% endblock %}
+
+<!--
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+</form>
+
+-->
+
+

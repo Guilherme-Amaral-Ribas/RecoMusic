@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="Bem_Vindo">Bem vindo</h1>
+
+    <div id="#menu-container">
+        <div id="container-itens">
+            <a href="{% url 'login' %}">
+                <button class="item-home">Login</button>
+            </a>
+            <a href="{% url 'cadastrar' %}">
+                <button class="item-home">Cadastrar</button>
+            </a>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,295 @@
+body {
+    background-color: #7C9FD7;
+}
+
+
+
+
+.titulo, #RecoMusic{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Sansita'; /*Bold 700 Italic */
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.titulo{
+    font-size: 30px;
+}
+
+.Bem_Vindo{
+color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Sansita'; /*Bold 700 Italic */
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+/*#menu-container{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+
+.item{
+    color: #BDD2FC;
+    font-family: 'Sansita';
+    margin: 10px;
+
+#login{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#email {
+    font-size: 20px;
+    color: #fff;
+}
+
+#container-insertion{
+    margin-top: 60px;
+    background-color: #3498db;
+    padding: 10px;
+    border-radius:
+    width: 250px;
+}
+*/
+
+#menu-container, #menu-container-home {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+}
+
+#menu-container{
+    width: 500px;
+}
+
+/*#menu-container{
+    display: block;
+    height: 200px;
+    overflow-y: auto;
+ }*/
+
+#menu-container-home{
+    width: 500px;
+    background-color: #BDD2FC;
+}
+
+#menu-container-music{
+    width: 300px; /* largura desejada */
+    height: 200px; /* altura desejada */
+    overflow: auto;
+
+}
+
+#container-itens {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* width: 100%; /* Use 100% para ocupar toda a largura do #menu-container */
+    margin: 40px;
+
+}
+
+
+
+#login, #item-login , #item-pesquisa, .item-home, .item-music{
+    color: #BDD2FC;
+    font-size: 50px;
+    font-family: 'Sansita';
+    text-align: center;
+    margin: 10px; /* Espaçamento entre os itens */
+    width: 250px; /* Largura inicial (ajuste conforme necessário) */
+
+}
+
+
+#login {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#item-login,
+#item-pesquisa,
+.botao-entrar,
+.botao-pesquisa,
+.botao-cadastrar,
+.item-home,
+.item-music {
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: #bdd2fc;
+    color: #fff;
+    border-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.botao-entrar, .botao-cadastrar, .botao-pesquisa{
+    text-align: center;
+    width: 150px;
+    font-family: 'Sansita';
+    margin-top: 30px;
+
+}
+
+.botao-pesquisa{
+    height: 50px;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    background-color: #BDD2FC;
+    color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: auto;
+    margin-top: 50px;
+}
+
+#popup h2 {
+    margin-top: 10px;
+}
+
+#closePopup {
+    margin-top: 10px;
+}
+
+#popup button{
+    margin-bottom: 10px;
+}
+
+#music-icon{
+    margin-top: 10px;
+    width: 200px; /* Defina a largura desejada */
+    height: 200px; /* Defina a altura desejada */
+    border-radius: 15px;
+    background-color: #7C9FD7;
+    fill: #FFFFFF;
+    width: 200px; /* Largura desejada */
+    height: auto; /* Altura ajustada automaticamente mantendo a proporção */
+}
+}
+
+.botao-cadastrar{
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#item-login::placeholder {
+    color: #FFFFFF;
+}
+
+#item-pesquisa::placeholder {
+    color: white;
+}
+
+.container-pesquisa{
+    display: flex;
+}
+
+.botao-pesquisa {
+    margin-left: 10px; /* Espaço entre a caixa de pesquisa e o botão */
+}
+
+.item-home, .item-music{
+    background-color: #FFFFFF;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: #BDD2FC;
+}
+
+.item-music{
+    font-size:25px;
+}
+
+
+.custom-table {
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-collapse: collapse; /* Adiciona para garantir que as bordas da tabela sejam colapsadas */
+}
+
+/* Estilos para as células da tabela personalizada */
+.custom-table td, .custom-table th {
+    margin: 20px; /* Espaçamento entre os itens */
+    font-size: 20px;
+    background-color: #BDD2FC;
+    color: #fff;
+    border-top: 10px solid #FFFFFF; /* Adiciona uma borda para separar as células */
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden; /* Define o comportamento de overflow para o conteúdo da célula */
+    white-space: nowrap;
+}
+
+/* Estilos para as células da tabela personalizada, listras alternadas */
+.custom-table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+        }
+
+.item-user input[type="text"], .item-user-password input[type="password"] {
+    /* Adicione os estilos diretamente ao campo de entrada de texto */
+    background-color: #BDD2FC;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-color: #FFFFFF;
+    margin-bottom: 20px;
+    width: 250px;
+   font-size: 25px;
+   font-family: 'Sansita';
+}
+
+.item-user input::placeholder {
+    /* Estilos para o placeholder */
+    color: #ccc; /* Cor do texto do placeholder */
+    font-style: italic; /* Estilo do texto do placeholder */
+}
+
+.item-user-password input::placeholder {
+    /* Estilos para o placeholder */
+    color: #ccc; /* Cor do texto do placeholder */
+    font-style: italic; /* Estilo do texto do placeholder */
+}
